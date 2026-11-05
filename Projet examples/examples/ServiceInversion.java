@@ -5,7 +5,7 @@ import java.net.*;
 
 import bri.Service;
 
-// rien à ajouter ici
+// rien ï¿½ ajouter ici
 public class ServiceInversion implements Service {
 	
 	private final Socket client;
@@ -13,23 +13,23 @@ public class ServiceInversion implements Service {
 	public ServiceInversion(Socket socket) {
 		client = socket;
 	}
-@Override
-	public void run() {
-		try {BufferedReader in = new BufferedReader (new InputStreamReader(client.getInputStream ( )));
-			PrintWriter out = new PrintWriter (client.getOutputStream ( ), true);
-
-			out.println("Tapez un texte à inverser");
-		
-			String line = in.readLine();		
 	
-			String invLine = new String (new StringBuffer(line).reverse());
-			
-			out.println(invLine);
-			
-			client.close();
-		}
-		catch (IOException e) {
-			//Fin du service d'inversion
+	@Override
+	public void run() {
+		try {
+			BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+			PrintWriter out = new PrintWriter(client.getOutputStream(), true);
+
+			out.println("Tapez un texte Ã  inverser");
+			String line = in.readLine();
+
+			if (line != null) {
+				out.println(new StringBuilder(line).reverse().toString());
+			}
+		} catch (IOException e) {
+			System.err.println("Fin du service d'inversion : " + e);
+		} finally {
+			try { client.close(); } catch (IOException e) { }
 		}
 	}
 	

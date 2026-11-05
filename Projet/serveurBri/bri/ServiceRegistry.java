@@ -2,6 +2,11 @@ package bri;
 
 import java.util.List;
 
+
+/**
+ * Le "catalogue" des services disponibles. Classe utilitaire à état partagé :
+ * tous les threads (sessions programmeurs ET amateurs) y accèdent en même temps.
+ */
 public class ServiceRegistry {
 	// cette classe est un registre de services
 	// partag�e en concurrence par les clients et les "ajouteurs" de services,
@@ -12,8 +17,12 @@ public class ServiceRegistry {
 	}
 	private static List<Class<?>> servicesClasses;
 
-// ajoute une classe de service apr�s contr�le de la norme BLTi
-	public static void addService(Class<? extends Service> runclass) {
+	private static final List<ServiceInfo> services = new ArrayList<>();
+    // TODO : cette liste est partagée entre threads. Comment la protéger ?
+    //        (synchronized sur les méthodes ? Collections.synchronizedList ? Que choisir et pourquoi ?)
+
+    // TODO : ajouter un service (que faire s'il existe déjà ? rappelez-vous l'unicité de la classe)
+	public static void addService(Class<? extends Service> classe, String loginProgrammeur) {
 		try{
 			//
 			//validation
@@ -28,9 +37,17 @@ public class ServiceRegistry {
 		// si conforme, ajout au vector
 	}
 	
-// renvoie la classe de service (numService -1)	
-	public static Class<? extends Service> getServiceClass(int numService) {
-		
+    // TODO : mettre à jour un service (remplacer l'ancienne classe par la nouvelle)
+    //        Attention : les amateurs qui utilisent l'ancienne version ne doivent pas planter.
+    public static void updateService(Class<? extends Service> nouvelleClasse, String loginProgrammeur) 
+	{ 
+
+	}
+
+    // TODO : récupérer la classe du service numéro n (les numéros commencent à 1 pour l'amateur, à 0 pour la liste !)
+    public static Class<? extends Service> getServiceClass(int numero) 
+	{ 
+		return null; 
 	}
 
 // Validation qui verifie un bon toStringue (Comme TP 2)

@@ -5,10 +5,22 @@ import java.util.Scanner;
 
 import bri.ServeurBRi;
 
+/**
+ * Point d'entrée du serveur. Lance DEUX serveurs en parallèle :
+ * un pour les programmeurs (PORT_PROG), un pour les amateurs (PORT_AMA).
+ */
 public class BRiLaunch {
     private final static int PORT_SERVICE = 3000;
 
     public static void main(String[] args) {
+
+        // TODO 1 : créer le serveur "programmeurs" avec la bonne classe de session
+        // TODO 2 : créer le serveur "amateurs" avec la bonne classe de session
+        // TODO 3 : les lancer chacun dans leur propre Thread
+        //          Question : pourquoi ne peut-on pas les lancer dans le même thread ?
+        // TODO 4 : (option) charger des programmeurs de test dans ProgrammeurRegist
+
+
         @SuppressWarnings("resource")
         Scanner clavier = new Scanner(System.in);
 
