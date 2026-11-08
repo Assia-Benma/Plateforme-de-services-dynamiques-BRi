@@ -8,18 +8,11 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-/**
- * Représente un service installé dans la plateforme :
- * la classe + son propriétaire + son état (démarré / arrêté).
- * (Utile surtout pour les options démarrer/arrêter et désinstaller.)
- */
 public class ServiceInfo {
 
     private final Class<? extends Service> classe;
     private final String loginProgrammeur;
     private final byte[] empreinteBytecode;
-    private boolean demarre;
-
     public ServiceInfo(Class<? extends Service> classe, String loginProgrammeur) {
         if (classe == null) {
             throw new IllegalArgumentException("La classe du service est obligatoire");
@@ -30,7 +23,6 @@ public class ServiceInfo {
         this.classe = classe;
         this.loginProgrammeur = loginProgrammeur.trim();
         this.empreinteBytecode = calculerEmpreinteBytecode(classe);
-        this.demarre = true;
     }
 
     public Class<? extends Service> getClasse() {
@@ -47,17 +39,6 @@ public class ServiceInfo {
                 calculerEmpreinteBytecode(autreClasse));
     }
 
-    public synchronized boolean isDemarre() {
-        return demarre;
-    }
-
-    public synchronized void setDemarre(boolean demarre) {
-        this.demarre = demarre;
-    }
-
-    /**
-     * Appelle la méthode statique public toStringue() du service.
-     */
     public String nomAffichage() {
         try {
             Method methode = classe.getDeclaredMethod("toStringue");
@@ -65,16 +46,16 @@ public class ServiceInfo {
             return (String) resultat;
         } catch (NoSuchMethodException e) {
             throw new IllegalStateException(
-                    "Le service ne possède pas toStringue(): " + classe.getName(), e);
+                    "Le service ne possede pas toStringue(): " + classe.getName(), e);
         } catch (IllegalAccessException e) {
             throw new IllegalStateException(
                     "toStringue() n'est pas accessible: " + classe.getName(), e);
         } catch (InvocationTargetException e) {
             throw new IllegalStateException(
-                    "toStringue() a échoué: " + classe.getName(), e.getCause());
+                    "toStringue() a echoue: " + classe.getName(), e.getCause());
         } catch (ClassCastException e) {
             throw new IllegalStateException(
-                    "toStringue() ne renvoie pas une chaîne: " + classe.getName(), e);
+                    "toStringue() ne renvoie pas une chaine: " + classe.getName(), e);
         }
     }
 

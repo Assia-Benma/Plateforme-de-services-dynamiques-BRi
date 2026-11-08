@@ -6,24 +6,16 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.net.Socket;
 
-/**
- * Vérifie par réflexion qu'une classe respecte la norme BRi.
- * Elle sera appelée quand un programmeur fournit ou met à jour un service.
- */
 public final class ValidateurService {
 
     private ValidateurService() {
     }
 
-    /**
-     * @return null si la classe est valide, sinon un message expliquant ce qui ne va pas
-     *         (pour le renvoyer au programmeur : c'est bien plus utile qu'un simple boolean).
-     */
     public static String verifier(Class<?> classe, String loginProgrammeur) {
         StringBuilder erreurs = new StringBuilder();
 
         if (classe == null) {
-            return "La classe à vérifier est obligatoire";
+            return "La classe a verifier est obligatoire";
         }
 
         if (loginProgrammeur == null || loginProgrammeur.trim().isEmpty()) {
@@ -32,7 +24,7 @@ public final class ValidateurService {
 
         int modificateursClasse = classe.getModifiers();
         if (!Service.class.isAssignableFrom(classe)) {
-            erreurs.append("La classe n'implémente pas bri.Service\n");
+            erreurs.append("La classe n'implemente pas bri.Service\n");
         }
         if (Modifier.isAbstract(modificateursClasse)) {
             erreurs.append("La classe est abstraite\n");
@@ -46,7 +38,7 @@ public final class ValidateurService {
             String nomPackage = paquet == null ? "" : paquet.getName();
             if (!nomPackage.equals(loginProgrammeur)
                     && !nomPackage.startsWith(loginProgrammeur + ".")) {
-                erreurs.append("La classe doit être dans le package ")
+                erreurs.append("La classe doit etre dans le package ")
                         .append(loginProgrammeur)
                         .append('\n');
             }
@@ -64,7 +56,7 @@ public final class ValidateurService {
         try {
             Constructor<?> constructeur = classe.getConstructor(Socket.class);
             if (constructeur.getExceptionTypes().length > 0) {
-                erreurs.append("Le constructeur public (Socket) lève une exception\n");
+                erreurs.append("Le constructeur public (Socket) leve une exception\n");
             }
         } catch (NoSuchMethodException e) {
             erreurs.append("Il manque un constructeur public (Socket)\n");
@@ -98,7 +90,7 @@ public final class ValidateurService {
 
             if (!Modifier.isPublic(modificateurs)
                     || !Modifier.isStatic(modificateurs)) {
-                erreurs.append("toStringue doit être public static\n");
+                erreurs.append("toStringue doit etre public static\n");
             }
             if (methode.getReturnType() != String.class) {
                 erreurs.append("toStringue doit renvoyer String\n");
@@ -107,7 +99,7 @@ public final class ValidateurService {
                 erreurs.append("toStringue ne doit lever aucune exception\n");
             }
         } catch (NoSuchMethodException e) {
-            erreurs.append("Il manque la méthode public static String toStringue()\n");
+            erreurs.append("Il manque la methode public static String toStringue()\n");
         }
     }
 }

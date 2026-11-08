@@ -7,10 +7,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Session d'un amateur connecté sur PORT_AMA.
- * Rôle : afficher les services démarrés, lancer celui choisi.
- */
 public class ServiceAma implements Service {
 
     private final Socket client;
@@ -34,7 +30,7 @@ public class ServiceAma implements Service {
 
             String choix = entree.readLine();
             if (choix == null || choix.trim().isEmpty()) {
-                sortie.println("REFUS : Le numéro de service est obligatoire");
+                sortie.println("REFUS : Le numero de service est obligatoire");
                 return;
             }
 
@@ -42,7 +38,7 @@ public class ServiceAma implements Service {
             try {
                 numero = Integer.parseInt(choix.trim()) - 1;
             } catch (NumberFormatException e) {
-                sortie.println("REFUS : Le numéro de service est invalide");
+                sortie.println("REFUS : Le numero de service est invalide");
                 return;
             }
 

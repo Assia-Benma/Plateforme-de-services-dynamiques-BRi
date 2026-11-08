@@ -1,6 +1,5 @@
 package bri;
 
-/** Un programmeur inscrit sur la plateforme (compte supposé créé automatiquement). */
 public class Programmeur {
 
     private final String login;

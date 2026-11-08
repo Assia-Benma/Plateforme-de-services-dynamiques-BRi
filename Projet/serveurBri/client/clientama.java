@@ -7,11 +7,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Client console de l'amateur : se connecte à PORT_AMA.
- * Question : pourrait-il être identique à ClientProg ? Quelle différence reste-t-il (port seulement ?)
- * Si oui, une classe commune évite de dupliquer du code...
- */
 public class clientama {
 
     private static final String HOST = "localhost";
@@ -21,7 +16,7 @@ public class clientama {
         Socket socket = null;
         try {
             socket = new Socket(HOST, PORT_AMA);
- 
+
             BufferedReader in = new BufferedReader(
                     new InputStreamReader(socket.getInputStream(),
                             StandardCharsets.UTF_8));
@@ -32,7 +27,7 @@ public class clientama {
             BufferedReader clavier = new BufferedReader(
                     new InputStreamReader(System.in,
                             StandardCharsets.UTF_8));
- 
+
             String ligne;
             while ((ligne = in.readLine()) != null) {
                 System.out.println(ligne.replace("##", System.lineSeparator()));
@@ -42,15 +37,15 @@ public class clientama {
                     out.println(clavier.readLine());
                 }
             }
- 
+
         } catch (IOException e) {
-            System.err.println("Problème de connexion : " + e);
+            System.err.println("Probleme de connexion : " + e);
         } finally {
             if (socket != null) {
                 try {
                     socket.close();
                 } catch (IOException e) {
-                    // rien à faire
+
                 }
             }
         }

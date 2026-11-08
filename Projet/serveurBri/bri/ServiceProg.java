@@ -7,14 +7,10 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Session d'un programmeur connecté sur PORT_PROG.
- * Une instance = un client = un thread.
- */
 public class ServiceProg implements Service {
 
     private final Socket client;
-    private Programmeur programmeur; // null tant que non authentifié
+    private Programmeur programmeur;
 
     public ServiceProg(Socket client) {
         this.client = client;
@@ -38,7 +34,7 @@ public class ServiceProg implements Service {
             boolean continuer = true;
             while (continuer) {
                 sortie.println("MENU##1 - Fournir un service##"
-                        + "2 - Mettre à jour un service##"
+                        + "2 - Mettre a jour un service##"
                         + "3 - Changer l'adresse FTP##0 - Quitter");
                 String choix = entree.readLine();
                 if (choix == null || "0".equals(choix.trim())) {
@@ -69,11 +65,11 @@ public class ServiceProg implements Service {
 
         programmeur = ProgrammeurRegistry.authentifier(login, motDePasse);
         if (programmeur == null) {
-            sortie.println("Authentification refusée");
+            sortie.println("Authentification refusee");
             return false;
         }
 
-        sortie.println("Authentification réussie");
+        sortie.println("Authentification reussie");
         return true;
     }
 
@@ -85,7 +81,7 @@ public class ServiceProg implements Service {
             Class<? extends Service> classe = ChargeurService.charger(
                     programmeur.getUrlFtp(), nomClasse);
             ServiceRegistry.addService(classe, programmeur.getLogin());
-            sortie.println("Service installé : " + classe.getName());
+            sortie.println("Service installe : " + classe.getName());
         } catch (Exception e) {
             sortie.println("REFUS : " + encoder(e.getMessage()));
         }
@@ -99,7 +95,7 @@ public class ServiceProg implements Service {
             Class<? extends Service> classe = ChargeurService.charger(
                     programmeur.getUrlFtp(), nomClasse);
             ServiceRegistry.updateService(classe, programmeur.getLogin());
-            sortie.println("Service mis à jour : " + classe.getName());
+            sortie.println("Service mis a jour : " + classe.getName());
         } catch (Exception e) {
             sortie.println("REFUS : " + encoder(e.getMessage()));
         }
@@ -111,7 +107,7 @@ public class ServiceProg implements Service {
         String url = entree.readLine();
         try {
             programmeur.setUrlFtp(url);
-            sortie.println("Adresse FTP modifiée");
+            sortie.println("Adresse FTP modifiee");
         } catch (IllegalArgumentException e) {
             sortie.println("REFUS : " + encoder(e.getMessage()));
         }

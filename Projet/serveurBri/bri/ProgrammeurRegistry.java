@@ -3,7 +3,6 @@ package bri;
 import java.util.HashMap;
 import java.util.Map;
 
-/** Annuaire des programmeurs (login -> Programmeur). Partagé entre threads. */
 public class ProgrammeurRegistry {
 
     private static final Map<String, Programmeur> programmeurs = new HashMap<>();
@@ -17,7 +16,7 @@ public class ProgrammeurRegistry {
         }
         if (programmeurs.containsKey(programmeur.getLogin())) {
             throw new IllegalArgumentException(
-                    "Un programmeur utilise déjà ce login");
+                    "Un programmeur utilise deja ce login");
         }
         programmeurs.put(programmeur.getLogin(), programmeur);
     }

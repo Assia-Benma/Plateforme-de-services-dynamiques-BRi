@@ -6,9 +6,6 @@ import bri.ServeurBRi;
 import bri.Programmeur;
 import bri.ProgrammeurRegistry;
 
-/**
- * Point d'entrée de la plateforme BRi.
- */
 public final class BRiLaunch {
 
     private static final int PORT_PROG = 3000;
@@ -33,7 +30,7 @@ public final class BRiLaunch {
         serveurProgrammeurs.lancer();
         serveurAmateurs.lancer();
 
-        System.out.println("BRiLaunch démarré.");
+        System.out.println("BRiLaunch demarre.");
         System.out.println("Port programmeurs : " + PORT_PROG);
         System.out.println("Port amateurs : " + PORT_AMA);
     }

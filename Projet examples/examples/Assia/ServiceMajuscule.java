@@ -30,7 +30,7 @@ public class ServiceMajuscule implements Service {
                      new java.io.OutputStreamWriter(
                              client.getOutputStream(),
                              StandardCharsets.UTF_8), true)) {
-            sortie.println("Tapez un texte à convertir en majuscules");
+            sortie.println("Tapez un texte a convertir en majuscules");
             String texte = entree.readLine();
             if (texte != null) {
                 sortie.println(texte.toUpperCase(Locale.ROOT));

@@ -7,10 +7,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
-/**
- * Client console du programmeur : se connecte à PORT_PROG.
- * Le client est "bête" : il affiche ce que dit le serveur et envoie ce que tape l'utilisateur.
- */
 public class clientprog {
     private static final String HOST = "localhost";
     private static final int PORT_PROG = 3000;
@@ -42,7 +38,7 @@ public class clientprog {
                 }
             }
         } catch (IOException e) {
-            System.err.println("Problème de connexion : " + e.getMessage());
+            System.err.println("Probleme de connexion : " + e.getMessage());
         }
     }
 

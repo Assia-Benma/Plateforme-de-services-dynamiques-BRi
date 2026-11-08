@@ -28,7 +28,7 @@ public class ServicePalindrome implements Service {
                      new java.io.OutputStreamWriter(
                              client.getOutputStream(),
                              StandardCharsets.UTF_8), true)) {
-            sortie.println("Tapez un texte à tester");
+            sortie.println("Tapez un texte a tester");
             String texte = entree.readLine();
             if (texte != null) {
                 String normalise = texte.replaceAll("\\s+", "")

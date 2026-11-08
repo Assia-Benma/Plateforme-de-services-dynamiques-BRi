@@ -28,7 +28,7 @@ public class ServiceInversion implements Service {
                      new java.io.OutputStreamWriter(
                              client.getOutputStream(),
                              StandardCharsets.UTF_8), true)) {
-            sortie.println("Version 2 test - Tapez un texte à inverser");
+            sortie.println("Tapez un texte a inverser");
             String texte = entree.readLine();
             if (texte != null) {
                 sortie.println(new StringBuilder(texte).reverse());
