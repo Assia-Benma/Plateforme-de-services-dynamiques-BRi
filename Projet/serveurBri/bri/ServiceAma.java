@@ -1,4 +1,11 @@
+package bri;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
+import java.nio.charset.StandardCharsets;
 
 /**
  * Session d'un amateur connecté sur PORT_AMA.
@@ -6,8 +13,6 @@ import java.net.Socket;
  */
 public class ServiceAma implements Service {
 
-//placeholder
-    private static final String NOM_SERVICE = "exemple.ServiceInversion";
     private final Socket client;
 
     public ServiceAma(Socket client) {
@@ -16,34 +21,67 @@ public class ServiceAma implements Service {
 
     @Override
     public void run() {
+        try (Socket socket = client;
+             BufferedReader entree = new BufferedReader(
+                     new InputStreamReader(socket.getInputStream(),
+                             StandardCharsets.UTF_8));
+             PrintWriter sortie = new PrintWriter(
+                     new java.io.OutputStreamWriter(
+                             socket.getOutputStream(),
+                             StandardCharsets.UTF_8), true)) {
+            sortie.println(ServiceRegistry.toStringue());
+            sortie.println("NUMERO_SERVICE");
+
+            String choix = entree.readLine();
+            if (choix == null || choix.trim().isEmpty()) {
+                sortie.println("REFUS : Le numéro de service est obligatoire");
+                return;
+            }
+
+            int numero;
+            try {
+                numero = Integer.parseInt(choix.trim()) - 1;
+            } catch (NumberFormatException e) {
+                sortie.println("REFUS : Le numéro de service est invalide");
+                return;
+            }
+
+            Class<? extends Service> classeService;
+            try {
+                classeService = ServiceRegistry.getServiceClass(numero);
+            } catch (IndexOutOfBoundsException e) {
+                sortie.println("REFUS : " + e.getMessage());
+                return;
+            }
+
+            sortie.println("SERVICE_SELECTIONNE##" + classeService.getName());
+            lancerService(classeService);
+        } catch (IOException e) {
+            System.err.println("Session amateur interrompue : "
+                    + e.getMessage());
+        }
+    }
+
+    private void lancerService(Class<? extends Service> classeService) {
         try {
-            // 1. Retrouver la classe à partir de son nom (chargement dynamique)
-            Class<? extends Service> classeService =
-                    Class.forName(NOM_SERVICE).asSubclass(Service.class);
- 
-            // 2. Créer une instance en lui donnant la socket du client
-            Service service = classeService
-                    .getConstructor(Socket.class)
+            Service service = classeService.getConstructor(Socket.class)
                     .newInstance(client);
- 
-            // 3. Lancer le service dans CE thread : le dialogue est maintenant
-            //    entre le client et ServiceInversion. Quand il se termine,
-            //    il a fermé la socket lui-même.
             service.run();
- 
         } catch (ReflectiveOperationException | ClassCastException e) {
-            System.err.println("Impossible de lancer le service " + NOM_SERVICE + " : " + e);
+            System.err.println("Impossible de lancer le service "
+                    + classeService.getName() + " : " + e.getMessage());
             fermer();
         }
     }
-    
+
     private void fermer() {
         try {
-            client.close();
+            if (!client.isClosed()) {
+                client.close();
+            }
         } catch (IOException e) {
-            // rien à faire
+            System.err.println("Impossible de fermer la socket : "
+                    + e.getMessage());
         }
     }
-
 }
-

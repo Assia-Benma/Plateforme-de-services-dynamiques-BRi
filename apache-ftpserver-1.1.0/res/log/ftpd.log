@@ -1,0 +1,1840 @@
+[ INFO] 2017-02-10 10:17:36,014 [] [] FTP server started
+[ INFO] 2017-02-10 10:18:10,158 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:10,210 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:10,221 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:10,222 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:10,226 [] [0:0:0:0:0:0:0:1] RECEIVED: HEAD / HTTP/1.1
+[ INFO] 2017-02-10 10:18:10,226 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2017-02-10 10:18:10,227 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:18:10,227 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:18:10,228 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:18:10,230 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: *
+[ INFO] 2017-02-10 10:18:10,231 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:18:10,232 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,233 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:18:10,234 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ WARN] 2017-02-10 10:18:10,238 [] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2017-02-10 10:18:10,240 [] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2017-02-10 10:18:10,240 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:18:24,467 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:24,468 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:24,469 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:24,473 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:18:24,473 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:18:24,474 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:18:24,476 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:18:24,978 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:18:24,980 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:18:24,980 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:18:24,980 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:18:24,981 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:18:24,982 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:18:31,475 [] [0:0:0:0:0:0:0:1] RECEIVED: USER h
+[ INFO] 2017-02-10 10:18:31,476 [h] [0:0:0:0:0:0:0:1] SENT: 331 User name okay, need password for h.
+
+[ INFO] 2017-02-10 10:18:31,509 [h] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:18:31,509 [h] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:18:32,009 [h] [0:0:0:0:0:0:0:1] Login failure - h
+[ INFO] 2017-02-10 10:18:32,010 [h] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:18:32,012 [h] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:22:18,612 [] [] FTP server started
+[ INFO] 2017-02-10 10:22:49,865 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:22:49,916 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:22:49,931 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:22:49,933 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:22:49,934 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:22:49,935 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:22:49,936 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:22:50,451 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:22:50,451 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:22:50,451 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:22:50,451 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:22:50,467 [anonymous] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:22:50,467 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:22:57,974 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: USER brette
+[ INFO] 2017-02-10 10:22:57,974 [brette] [0:0:0:0:0:0:0:1] SENT: 331 User name okay, need password for brette.
+
+[ INFO] 2017-02-10 10:22:58,005 [brette] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:22:58,005 [brette] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:22:58,508 [brette] [0:0:0:0:0:0:0:1] Login failure - brette
+[ INFO] 2017-02-10 10:22:58,508 [brette] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:22:58,508 [brette] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:29,798 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:29,798 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: HEAD / HTTP/1.1
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: gzip, deflate
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: GET / HTTP/1.1
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Host: localhost:21
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Language: en-us,en;q=0.5
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Encoding: *
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20150101 Firefox/44.0 (Chrome)
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: Connection: close
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] RECEIVED: 
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ INFO] 2017-02-10 10:28:29,814 [] [0:0:0:0:0:0:0:1] SENT: 530 Access denied.
+
+[ WARN] 2017-02-10 10:28:29,830 [] [0:0:0:0:0:0:0:1] EXCEPTION :
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ERROR] 2017-02-10 10:28:29,830 [] [0:0:0:0:0:0:0:1] Exception caught, closing session
+java.io.IOException: Une connexion existante a dû être fermée par l’hôte distant
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(Unknown Source)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(Unknown Source)
+	at sun.nio.ch.IOUtil.read(Unknown Source)
+	at sun.nio.ch.SocketChannelImpl.read(Unknown Source)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:317)
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:45)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:683)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:659)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.process(AbstractPollingIoProcessor.java:648)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$600(AbstractPollingIoProcessor.java:68)
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:1120)
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+[ INFO] 2017-02-10 10:28:29,830 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:53,610 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:28:53,610 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:28:53,610 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:28:53,610 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:28:54,110 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:28:54,110 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:28:54,110 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:28:54,110 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:28:54,110 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:28:54,110 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:28:57,553 [] [0:0:0:0:0:0:0:1] RECEIVED: USER gs
+[ INFO] 2017-02-10 10:28:57,553 [gs] [0:0:0:0:0:0:0:1] SENT: 331 User name okay, need password for gs.
+
+[ INFO] 2017-02-10 10:28:59,075 [gs] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:28:59,075 [gs] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:28:59,590 [gs] [0:0:0:0:0:0:0:1] Login failure - gs
+[ INFO] 2017-02-10 10:28:59,590 [gs] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:28:59,590 [gs] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:29:36,831 [] [] FTP server started
+[ INFO] 2017-02-10 10:29:41,167 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:29:41,214 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:29:41,214 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:29:41,214 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:29:41,230 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:29:41,230 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ WARN] 2017-02-10 10:29:41,230 [anonymous] [0:0:0:0:0:0:0:1] User failed to log in
+[ WARN] 2017-02-10 10:29:41,739 [anonymous] [0:0:0:0:0:0:0:1] Login failure - anonymous
+[ INFO] 2017-02-10 10:29:41,739 [anonymous] [0:0:0:0:0:0:0:1] SENT: 530 Authentication failed.
+
+[ INFO] 2017-02-10 10:29:41,739 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:29:41,739 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:29:41,754 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:29:41,754 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:29:57,828 [] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 10:51:17,498 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@deb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]; startup date [Fri Feb 10 10:51:17 CET 2017]; root of context hierarchy
+[ INFO] 2017-02-10 10:51:17,561 [] [] Loading XML bean definitions from file [C:\Users\brette\Desktop\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2017-02-10 10:51:19,045 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd
+[ INFO] 2017-02-10 10:51:19,061 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2017-02-10 10:51:19,217 [] [] FTP server started
+[ INFO] 2017-02-10 10:51:37,523 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 10:51:37,539 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 10:51:37,552 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:51:37,554 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:51:37,556 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:51:37,557 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2017-02-10 10:51:37,562 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 10:51:37,562 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 10:51:37,565 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SYST
+[ INFO] 2017-02-10 10:51:37,566 [anonymous] [0:0:0:0:0:0:0:1] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 10:51:37,569 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: FEAT
+[ INFO] 2017-02-10 10:51:37,569 [anonymous] [0:0:0:0:0:0:0:1] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 10:51:37,570 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 10:51:37,570 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 10:51:37,571 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PWD
+[ INFO] 2017-02-10 10:51:37,573 [anonymous] [0:0:0:0:0:0:0:1] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 10:51:37,574 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2017-02-10 10:51:37,575 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 10:51:37,575 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:51:37,578 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2699|)
+
+[ INFO] 2017-02-10 10:51:37,581 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2017-02-10 10:51:37,582 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:51:37,582 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:51:37,590 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2699
+[ INFO] 2017-02-10 10:51:37,590 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:51:37,590 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2703|)
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /../
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2703
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:51:49,344 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2705|)
+
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /../../
+[ INFO] 2017-02-10 10:51:59,551 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2705
+[ INFO] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:51:59,566 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2707|)
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /../../README.txt
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 28
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /../../README.txt
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20161024110422.000
+
+[ INFO] 2017-02-10 10:52:04,919 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /../../README.txt
+[ INFO] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /README.txt
+[ WARN] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2707
+[ INFO] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:04,981 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2709|)
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2709
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:21,015 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:52:36,389 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:36,390 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2712|)
+
+[ INFO] 2017-02-10 10:52:36,391 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /README.txt
+[ INFO] 2017-02-10 10:52:36,391 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 28
+
+[ INFO] 2017-02-10 10:52:36,392 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /README.txt
+[ INFO] 2017-02-10 10:52:36,392 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20161024110422.000
+
+[ INFO] 2017-02-10 10:52:36,392 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /README.txt
+[ INFO] 2017-02-10 10:52:36,443 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /README.txt
+[ WARN] 2017-02-10 10:52:36,444 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2712
+[ INFO] 2017-02-10 10:52:36,444 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:36,444 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2714|)
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /README.txt
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 28
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /README.txt
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20161024110422.000
+
+[ INFO] 2017-02-10 10:52:42,175 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /README.txt
+[ INFO] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /README.txt
+[ WARN] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2714
+[ INFO] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:52:42,238 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2726|)
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette: Not a plain file.
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095356.712
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette
+[ WARN] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2726
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette: Not a plain file.
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2728|)
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /brette
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] SENT: 250 Directory changed to /brette
+
+[ INFO] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: LIST
+[ WARN] 2017-02-10 10:54:38,511 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2728
+[ INFO] 2017-02-10 10:54:38,527 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:54:38,527 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Closing data connection.
+
+[ INFO] 2017-02-10 10:54:41,421 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:41,421 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2730|)
+
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette/README.txt
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 11
+
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette/README.txt
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 10:54:41,437 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette/README.txt
+[ INFO] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /brette/README.txt
+[ WARN] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2730
+[ INFO] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:54:41,499 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||2732|)
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette/readme.txt
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 11
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette/readme.txt
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 10:54:52,810 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette/readme.txt
+[ INFO] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /brette/readme.txt
+[ WARN] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 2732
+[ INFO] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:54:52,888 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] CREATED
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] OPENED
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 10:58:18,617 [] [172.19.35.38] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: PASS *****
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: SYST
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: FEAT
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: PWD
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: TYPE I
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: PASV
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 227 Entering Passive Mode (172,19,34,124,10,215)
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: SIZE /brette/readme.txt
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 213 11
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: MDTM /brette/readme.txt
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 10:58:18,617 [anonymous] [172.19.35.38] RECEIVED: RETR /brette/readme.txt
+[ INFO] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] File downloaded /brette/readme.txt
+[ WARN] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] Releasing unreserved passive port: 2775
+[ INFO] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 10:58:18,680 [anonymous] [172.19.35.38] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 10:58:26,274 [anonymous] [172.19.35.38] CLOSED
+[ INFO] 2017-02-10 10:59:52,911 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2017-02-10 11:52:13,155 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@deb6432: display name [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]; startup date [Fri Feb 10 11:52:13 CET 2017]; root of context hierarchy
+[ INFO] 2017-02-10 11:52:13,187 [] [] Loading XML bean definitions from file [C:\Users\brette\Desktop\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2017-02-10 11:52:13,405 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@deb6432]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd
+[ INFO] 2017-02-10 11:52:13,405 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d3fcdbd: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2017-02-10 11:52:13,546 [] [] FTP server started
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 11:53:21,648 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 11:53:21,664 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 11:53:21,664 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2017-02-10 11:53:21,669 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 11:53:21,670 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 11:53:21,674 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SYST
+[ INFO] 2017-02-10 11:53:21,675 [anonymous] [0:0:0:0:0:0:0:1] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 11:53:21,677 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: FEAT
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 11:53:21,678 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PWD
+[ INFO] 2017-02-10 11:53:21,680 [anonymous] [0:0:0:0:0:0:0:1] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 11:53:21,680 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2017-02-10 11:53:21,681 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 11:53:21,682 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:53:21,685 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3278|)
+
+[ INFO] 2017-02-10 11:53:21,689 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /brette/readme.txt
+[ INFO] 2017-02-10 11:53:21,690 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette/readme.txt: No such file or directory.
+
+[ INFO] 2017-02-10 11:53:21,690 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /brette/readme.txt
+[ INFO] 2017-02-10 11:53:21,691 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 File /brette/readme.txt unavailable.
+
+[ INFO] 2017-02-10 11:53:21,691 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /brette/readme.txt
+[ WARN] 2017-02-10 11:53:21,693 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3278
+[ INFO] 2017-02-10 11:53:21,693 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 /brette/readme.txt: No such file or directory.
+
+[ INFO] 2017-02-10 11:53:21,693 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:53:21,694 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3280|)
+
+[ INFO] 2017-02-10 11:53:21,694 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: CWD /brette/readme.txt
+[ INFO] 2017-02-10 11:53:21,695 [anonymous] [0:0:0:0:0:0:0:1] SENT: 550 No such directory.
+
+[ INFO] 2017-02-10 11:53:21,696 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ WARN] 2017-02-10 11:53:21,696 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3280
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] CREATED
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] OPENED
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] SENT: 220 Service ready for new user.
+
+[ INFO] 2017-02-10 11:54:00,593 [] [0:0:0:0:0:0:0:1] RECEIVED: USER anonymous
+[ INFO] 2017-02-10 11:54:00,593 [anonymous] [0:0:0:0:0:0:0:1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PASS *****
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] Anonymous login success - mozilla@example.com
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SYST
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 215 UNIX Type: Apache FtpServer
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: FEAT
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 211-Extensions supported
+ SIZE
+ MDTM
+ REST STREAM
+ LANG en;zh-tw;ja;is
+ MLST Size;Modify;Type;Perm
+ AUTH SSL
+ AUTH TLS
+ MODE Z
+ UTF8
+ TVFS
+ MD5
+ MMD5
+ MFMT
+211 End
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: OPTS UTF8 ON
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command OPTS okay.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: PWD
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 257 "/" is current directory.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: TYPE I
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3285|)
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 11
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210095429.067
+
+[ INFO] 2017-02-10 11:54:00,608 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /texte/bonjour.txt
+[ WARN] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3285
+[ INFO] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 11:54:00,671 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: EPSV
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] SENT: 229 Entering Passive Mode (|||3288|)
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: SIZE /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 24
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: MDTM /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] SENT: 213 20170210105431.255
+
+[ INFO] 2017-02-10 11:54:34,056 [anonymous] [0:0:0:0:0:0:0:1] RECEIVED: RETR /texte/bonjour.txt
+[ INFO] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] File downloaded /texte/bonjour.txt
+[ WARN] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] Releasing unreserved passive port: 3288
+[ INFO] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2017-02-10 11:54:34,119 [anonymous] [0:0:0:0:0:0:0:1] SENT: 226 Transfer complete.
+
+[ INFO] 2017-02-10 11:59:34,129 [anonymous] [0:0:0:0:0:0:0:1] CLOSED
+[ INFO] 2026-09-30 11:25:58,035 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@4c0bc4: display name [org.springframework.context.support.FileSystemXmlApplicationContext@4c0bc4]; startup date [Wed Sep 30 11:25:58 CEST 2026]; root of context hierarchy
+[ INFO] 2026-09-30 11:25:58,192 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\Qualité de développement\TP 4\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-09-30 11:26:00,317 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@4c0bc4]: org.springframework.beans.factory.support.DefaultListableBeanFactory@25e1b6
+[ INFO] 2026-09-30 11:26:00,363 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@25e1b6: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-09-30 11:26:00,764 [] [] FTP server started
+[ INFO] 2026-11-07 22:05:07,202 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@85bdee: display name [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]; startup date [Sat Nov 07 22:05:07 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 22:05:07,314 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\Projet\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 22:05:08,937 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1dc9a9f
+[ INFO] 2026-11-07 22:05:08,959 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dc9a9f: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 22:05:09,259 [] [] FTP server started
+[ INFO] 2026-11-07 22:07:10,169 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 22:07:10,180 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 22:07:10,200 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 22:07:10,204 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 22:07:10,210 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 22:07:10,211 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 22:07:10,222 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 22:07:10,223 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 22:07:10,224 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 22:07:10,226 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 22:07:10,227 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 22:07:10,240 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 22:07:10,241 [anonymous] [127.0.0.1] RECEIVED: CWD bri
+[ INFO] 2026-11-07 22:07:10,242 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri
+
+[ INFO] 2026-11-07 22:07:10,242 [anonymous] [127.0.0.1] RECEIVED: CWD examples
+[ INFO] 2026-11-07 22:07:10,244 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri/examples
+
+[ INFO] 2026-11-07 22:07:10,245 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 22:07:10,250 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||65245|)
+
+[ INFO] 2026-11-07 22:07:10,251 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 22:07:10,251 [anonymous] [127.0.0.1] Releasing unreserved passive port: 65245
+[ INFO] 2026-11-07 22:07:10,253 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||65246|)
+
+[ INFO] 2026-11-07 22:07:10,256 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-07 22:07:10,770 [anonymous] [127.0.0.1] File downloaded /classes/bri/examples/ServiceInversion.class
+[ WARN] 2026-11-07 22:07:10,773 [anonymous] [127.0.0.1] Releasing unreserved passive port: 65246
+[ INFO] 2026-11-07 22:07:10,773 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 22:07:10,773 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 22:07:10,773 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 22:07:10,775 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 22:07:10,775 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 22:10:23,261 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 22:10:23,263 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 22:10:23,264 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 22:10:23,265 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 22:10:23,266 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 22:10:23,266 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 22:10:23,267 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 22:10:23,267 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 22:10:23,268 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 22:10:23,269 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 22:10:23,269 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 22:10:23,271 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 22:10:23,271 [anonymous] [127.0.0.1] RECEIVED: CWD bri
+[ INFO] 2026-11-07 22:10:23,272 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri
+
+[ INFO] 2026-11-07 22:10:23,273 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 22:10:23,274 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||65267|)
+
+[ INFO] 2026-11-07 22:10:23,274 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 22:10:23,275 [anonymous] [127.0.0.1] Releasing unreserved passive port: 65267
+[ INFO] 2026-11-07 22:10:23,276 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||65268|)
+
+[ INFO] 2026-11-07 22:10:23,277 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ WARN] 2026-11-07 22:10:23,278 [anonymous] [127.0.0.1] Releasing unreserved passive port: 65268
+[ INFO] 2026-11-07 22:10:23,278 [anonymous] [127.0.0.1] SENT: 550 /classes/bri/ServiceInversion.class: No such file or directory.
+
+[ INFO] 2026-11-07 22:10:23,279 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 22:10:23,280 [anonymous] [127.0.0.1] SENT: 550 No such directory.
+
+[ INFO] 2026-11-07 22:10:23,280 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 22:10:23,281 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 22:10:23,281 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 22:47:30,600 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@85bdee: display name [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]; startup date [Sat Nov 07 22:47:30 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 22:47:30,726 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\Projet\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 22:47:32,328 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1dc9a9f
+[ INFO] 2026-11-07 22:47:32,363 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dc9a9f: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 22:47:32,725 [] [] FTP server started
+[ INFO] 2026-11-07 22:49:49,685 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 22:49:49,695 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 22:49:49,714 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 22:49:49,718 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 22:49:49,723 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 22:49:49,723 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 22:49:49,733 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 22:49:49,733 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 22:49:49,734 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 22:49:49,736 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 22:49:49,738 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 22:49:49,752 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 22:49:49,753 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 22:49:49,758 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59585|)
+
+[ INFO] 2026-11-07 22:49:49,758 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 22:49:49,759 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59585
+[ INFO] 2026-11-07 22:49:49,760 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59586|)
+
+[ INFO] 2026-11-07 22:49:49,763 [anonymous] [127.0.0.1] RECEIVED: RETR 1.class
+[ WARN] 2026-11-07 22:49:49,766 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59586
+[ INFO] 2026-11-07 22:49:49,766 [anonymous] [127.0.0.1] SENT: 550 /classes/1.class: No such file or directory.
+
+[ INFO] 2026-11-07 22:49:49,768 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 22:49:49,769 [anonymous] [127.0.0.1] SENT: 550 No such directory.
+
+[ INFO] 2026-11-07 22:49:49,770 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 22:49:49,771 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 22:49:49,772 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 22:50:02,480 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 22:50:02,481 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 22:50:02,483 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 22:50:02,483 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 22:50:02,485 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 22:50:02,485 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 22:50:02,486 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 22:50:02,487 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 22:50:02,488 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 22:50:02,489 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 22:50:02,489 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 22:50:02,491 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 22:50:02,491 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-07 22:50:02,493 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-07 22:50:02,493 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 22:50:02,495 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59595|)
+
+[ INFO] 2026-11-07 22:50:02,496 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 22:50:02,497 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59595
+[ INFO] 2026-11-07 22:50:02,499 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59596|)
+
+[ INFO] 2026-11-07 22:50:02,501 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-07 22:50:03,009 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-07 22:50:03,010 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59596
+[ INFO] 2026-11-07 22:50:03,010 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 22:50:03,010 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 22:50:03,011 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 22:50:03,012 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 22:50:03,012 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:00:19,529 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@85bdee: display name [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]; startup date [Sat Nov 07 23:00:19 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 23:00:19,641 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\Projet\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 23:00:21,164 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]: org.springframework.beans.factory.support.DefaultListableBeanFactory@385cce
+[ INFO] 2026-11-07 23:00:21,184 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@385cce: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 23:00:21,408 [] [] FTP server started
+[ INFO] 2026-11-07 23:27:46,363 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@45f292: display name [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]; startup date [Sat Nov 07 23:27:46 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 23:27:46,506 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 23:27:48,260 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]: org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06
+[ INFO] 2026-11-07 23:27:48,292 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 23:27:48,647 [] [] FTP server started
+[ INFO] 2026-11-07 23:30:51,726 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:30:51,736 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:30:51,756 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:30:51,759 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:30:51,764 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:30:51,765 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:30:51,775 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:30:51,775 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:30:51,776 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:30:51,778 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:30:51,780 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:30:51,787 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:30:51,788 [anonymous] [127.0.0.1] RECEIVED: CWD bri
+[ INFO] 2026-11-07 23:30:51,789 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri
+
+[ INFO] 2026-11-07 23:30:51,790 [anonymous] [127.0.0.1] RECEIVED: CWD examples
+[ INFO] 2026-11-07 23:30:51,791 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri/examples
+
+[ INFO] 2026-11-07 23:30:51,792 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 23:30:51,798 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50479|)
+
+[ INFO] 2026-11-07 23:30:51,798 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 23:30:51,799 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50479
+[ INFO] 2026-11-07 23:30:51,801 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50480|)
+
+[ INFO] 2026-11-07 23:30:51,805 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-07 23:30:52,321 [anonymous] [127.0.0.1] File downloaded /classes/bri/examples/ServiceInversion.class
+[ WARN] 2026-11-07 23:30:52,324 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50480
+[ INFO] 2026-11-07 23:30:52,324 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 23:30:52,324 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 23:30:52,325 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:30:52,328 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:30:52,328 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:31:05,341 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:31:05,342 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:31:05,344 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:31:05,345 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:31:05,346 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:31:05,347 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:31:05,348 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:31:05,348 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:31:05,349 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:31:05,350 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:31:05,351 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:31:05,352 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:31:05,353 [anonymous] [127.0.0.1] RECEIVED: CWD bri
+[ INFO] 2026-11-07 23:31:05,354 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri
+
+[ INFO] 2026-11-07 23:31:05,354 [anonymous] [127.0.0.1] RECEIVED: CWD examples
+[ INFO] 2026-11-07 23:31:05,355 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri/examples
+
+[ INFO] 2026-11-07 23:31:05,356 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 23:31:05,357 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50483|)
+
+[ INFO] 2026-11-07 23:31:05,358 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 23:31:05,358 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50483
+[ INFO] 2026-11-07 23:31:05,360 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50484|)
+
+[ INFO] 2026-11-07 23:31:05,361 [anonymous] [127.0.0.1] RECEIVED: RETR ServicePalindrome.class
+[ INFO] 2026-11-07 23:31:05,969 [anonymous] [127.0.0.1] File downloaded /classes/bri/examples/ServicePalindrome.class
+[ WARN] 2026-11-07 23:31:05,970 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50484
+[ INFO] 2026-11-07 23:31:05,971 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 23:31:05,971 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 23:31:05,971 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:31:05,974 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:31:05,975 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:34:50,249 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@45f292: display name [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]; startup date [Sat Nov 07 23:34:50 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 23:34:50,377 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 23:34:52,037 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]: org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06
+[ INFO] 2026-11-07 23:34:52,069 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 23:34:52,446 [] [] FTP server started
+[ INFO] 2026-11-07 23:35:29,998 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:35:30,007 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:35:30,023 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:35:30,028 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:35:30,033 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:35:30,033 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:35:30,043 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:35:30,044 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:35:30,045 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:35:30,047 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:35:30,048 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:35:30,054 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:35:30,055 [anonymous] [127.0.0.1] RECEIVED: CWD bri
+[ INFO] 2026-11-07 23:35:30,056 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri
+
+[ INFO] 2026-11-07 23:35:30,057 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 23:35:30,062 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59777|)
+
+[ INFO] 2026-11-07 23:35:30,063 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 23:35:30,064 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59777
+[ INFO] 2026-11-07 23:35:30,065 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59778|)
+
+[ INFO] 2026-11-07 23:35:30,069 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInvalide.class
+[ INFO] 2026-11-07 23:35:30,200 [anonymous] [127.0.0.1] File downloaded /classes/bri/ServiceInvalide.class
+[ WARN] 2026-11-07 23:35:30,203 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59778
+[ INFO] 2026-11-07 23:35:30,203 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 23:35:30,203 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 23:35:30,204 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:35:30,205 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:35:30,206 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:35:57,628 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:35:57,629 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:35:57,630 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:35:57,631 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:35:57,632 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:35:57,633 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:35:57,633 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:35:57,634 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:35:57,635 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:35:57,636 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:35:57,636 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:35:57,638 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:35:57,638 [anonymous] [127.0.0.1] RECEIVED: CWD bri
+[ INFO] 2026-11-07 23:35:57,639 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/bri
+
+[ INFO] 2026-11-07 23:35:57,640 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 23:35:57,642 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59790|)
+
+[ INFO] 2026-11-07 23:35:57,642 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 23:35:57,643 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59790
+[ INFO] 2026-11-07 23:35:57,644 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59791|)
+
+[ INFO] 2026-11-07 23:35:57,646 [anonymous] [127.0.0.1] RECEIVED: RETR ServicePalindrome.class
+[ INFO] 2026-11-07 23:35:58,219 [anonymous] [127.0.0.1] File downloaded /classes/bri/ServicePalindrome.class
+[ WARN] 2026-11-07 23:35:58,220 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59791
+[ INFO] 2026-11-07 23:35:58,221 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 23:35:58,221 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 23:35:58,221 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:35:58,223 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:35:58,223 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:40:58,511 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@45f292: display name [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]; startup date [Sat Nov 07 23:40:58 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 23:40:58,627 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 23:41:00,317 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]: org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06
+[ INFO] 2026-11-07 23:41:00,351 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 23:41:00,751 [] [] FTP server started
+[ INFO] 2026-11-07 23:42:23,006 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:42:23,015 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:42:23,034 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:42:23,038 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:42:23,043 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:42:23,044 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:42:23,052 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:42:23,053 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:42:23,054 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:42:23,056 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:42:23,057 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:42:23,063 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:42:23,063 [anonymous] [127.0.0.1] RECEIVED: CWD Ines
+[ INFO] 2026-11-07 23:42:23,065 [anonymous] [127.0.0.1] SENT: 550 No such directory.
+
+[ INFO] 2026-11-07 23:42:23,066 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:42:23,071 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:42:23,072 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:54:14,250 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@13ad2d6: display name [org.springframework.context.support.FileSystemXmlApplicationContext@13ad2d6]; startup date [Sat Nov 07 23:54:14 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 23:54:14,350 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 23:54:16,023 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@13ad2d6]: org.springframework.beans.factory.support.DefaultListableBeanFactory@385cce
+[ INFO] 2026-11-07 23:54:16,043 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@385cce: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 23:54:16,438 [] [] FTP server started
+[ INFO] 2026-11-07 23:58:07,358 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@45f292: display name [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]; startup date [Sat Nov 07 23:58:07 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-07 23:58:07,485 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\apache-ftpserver-1.1.0\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-07 23:58:09,092 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@45f292]: org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06
+[ INFO] 2026-11-07 23:58:09,123 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@cae06: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-07 23:58:09,493 [] [] FTP server started
+[ INFO] 2026-11-07 23:59:29,497 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:59:29,506 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:59:29,523 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:59:29,527 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:59:29,532 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:59:29,533 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:59:29,541 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:59:29,542 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:59:29,543 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:59:29,545 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:59:29,546 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:59:29,553 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:59:29,553 [anonymous] [127.0.0.1] RECEIVED: CWD Ines
+[ INFO] 2026-11-07 23:59:29,555 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Ines
+
+[ INFO] 2026-11-07 23:59:29,555 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 23:59:29,560 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62463|)
+
+[ INFO] 2026-11-07 23:59:29,561 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 23:59:29,561 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62463
+[ INFO] 2026-11-07 23:59:29,563 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62464|)
+
+[ INFO] 2026-11-07 23:59:29,566 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInvalide.class
+[ INFO] 2026-11-07 23:59:29,704 [anonymous] [127.0.0.1] File downloaded /classes/Ines/ServiceInvalide.class
+[ WARN] 2026-11-07 23:59:29,713 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62464
+[ INFO] 2026-11-07 23:59:29,713 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 23:59:29,713 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 23:59:29,714 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:59:29,716 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:59:29,716 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-07 23:59:56,035 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-07 23:59:56,036 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-07 23:59:56,037 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-07 23:59:56,038 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-07 23:59:56,040 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-07 23:59:56,040 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-07 23:59:56,041 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-07 23:59:56,042 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-07 23:59:56,042 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-07 23:59:56,043 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-07 23:59:56,043 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-07 23:59:56,045 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-07 23:59:56,045 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-07 23:59:56,047 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-07 23:59:56,047 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-07 23:59:56,049 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62475|)
+
+[ INFO] 2026-11-07 23:59:56,049 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-07 23:59:56,050 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62475
+[ INFO] 2026-11-07 23:59:56,051 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62476|)
+
+[ INFO] 2026-11-07 23:59:56,053 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-07 23:59:56,616 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-07 23:59:56,617 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62476
+[ INFO] 2026-11-07 23:59:56,617 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-07 23:59:56,618 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-07 23:59:56,619 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-07 23:59:56,620 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-07 23:59:56,621 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:00:19,685 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:00:19,686 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:00:19,687 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:00:19,688 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:00:19,689 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:00:19,690 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:00:19,691 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:00:19,691 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:00:19,692 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:00:19,693 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:00:19,693 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:00:19,695 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:00:19,695 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:00:19,697 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:00:19,698 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:00:19,699 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62490|)
+
+[ INFO] 2026-11-08 00:00:19,703 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:00:19,704 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62490
+[ INFO] 2026-11-08 00:00:19,705 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62491|)
+
+[ INFO] 2026-11-08 00:00:19,708 [anonymous] [127.0.0.1] RECEIVED: RETR ServicePalindrome.class
+[ INFO] 2026-11-08 00:00:20,281 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServicePalindrome.class
+[ WARN] 2026-11-08 00:00:20,282 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62491
+[ INFO] 2026-11-08 00:00:20,283 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:00:20,283 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:00:20,283 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:00:20,284 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:00:20,284 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:00:39,248 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:00:39,249 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:00:39,251 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:00:39,252 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:00:39,254 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:00:39,254 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:00:39,255 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:00:39,256 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:00:39,257 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:00:39,258 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:00:39,259 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:00:39,260 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:00:39,261 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:00:39,262 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:00:39,263 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:00:39,264 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62498|)
+
+[ INFO] 2026-11-08 00:00:39,265 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:00:39,266 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62498
+[ INFO] 2026-11-08 00:00:39,268 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||62499|)
+
+[ INFO] 2026-11-08 00:00:39,270 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:00:39,780 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:00:39,782 [anonymous] [127.0.0.1] Releasing unreserved passive port: 62499
+[ INFO] 2026-11-08 00:00:39,782 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:00:39,782 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:00:39,782 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:00:39,784 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:00:39,784 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:05:35,649 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:05:35,651 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:05:35,652 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:05:35,653 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:05:35,655 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:05:35,655 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:05:35,656 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:05:35,656 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:05:35,657 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:05:35,657 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:05:35,658 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:05:35,659 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:05:35,659 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:05:35,660 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:05:35,660 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:05:35,662 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50238|)
+
+[ INFO] 2026-11-08 00:05:35,662 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:05:35,663 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50238
+[ INFO] 2026-11-08 00:05:35,664 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||50239|)
+
+[ INFO] 2026-11-08 00:05:35,666 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:05:36,225 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:05:36,225 [anonymous] [127.0.0.1] Releasing unreserved passive port: 50239
+[ INFO] 2026-11-08 00:05:36,226 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:05:36,226 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:05:36,226 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:05:36,227 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:05:36,228 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:07:22,485 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:07:22,486 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:07:22,488 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:07:22,488 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:07:22,490 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:07:22,490 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:07:22,491 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:07:22,491 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:07:22,492 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:07:22,493 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:07:22,493 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:07:22,494 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:07:22,495 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:07:22,496 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:07:22,496 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:07:22,497 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||64577|)
+
+[ INFO] 2026-11-08 00:07:22,497 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:07:22,498 [anonymous] [127.0.0.1] Releasing unreserved passive port: 64577
+[ INFO] 2026-11-08 00:07:22,500 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||64578|)
+
+[ INFO] 2026-11-08 00:07:22,501 [anonymous] [127.0.0.1] RECEIVED: RETR ServicePalindrome.class
+[ INFO] 2026-11-08 00:07:23,116 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServicePalindrome.class
+[ WARN] 2026-11-08 00:07:23,117 [anonymous] [127.0.0.1] Releasing unreserved passive port: 64578
+[ INFO] 2026-11-08 00:07:23,117 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:07:23,124 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:07:23,125 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:07:23,126 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:07:23,126 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:11:20,105 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:11:20,106 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:11:20,108 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:11:20,109 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:11:20,110 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:11:20,111 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:11:20,112 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:11:20,113 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:11:20,114 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:11:20,114 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:11:20,115 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:11:20,116 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:11:20,116 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:11:20,117 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:11:20,118 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:11:20,119 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||51713|)
+
+[ INFO] 2026-11-08 00:11:20,120 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:11:20,120 [anonymous] [127.0.0.1] Releasing unreserved passive port: 51713
+[ INFO] 2026-11-08 00:11:20,122 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||51714|)
+
+[ INFO] 2026-11-08 00:11:20,124 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:11:20,692 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:11:20,693 [anonymous] [127.0.0.1] Releasing unreserved passive port: 51714
+[ INFO] 2026-11-08 00:11:20,694 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:11:20,694 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:11:20,694 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:11:20,696 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:11:20,697 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:35,585 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:35,587 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:35,589 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:35,591 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:35,592 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:35,593 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:35,593 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:35,593 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:35,596 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:35,597 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:35,597 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:35,599 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:35,599 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:35,600 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:35,601 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:35,603 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53146|)
+
+[ INFO] 2026-11-08 00:14:35,603 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:35,604 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53146
+[ INFO] 2026-11-08 00:14:35,605 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53147|)
+
+[ INFO] 2026-11-08 00:14:35,608 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:36,163 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:36,164 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53147
+[ INFO] 2026-11-08 00:14:36,165 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:36,165 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:36,166 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:36,168 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:36,169 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:42,910 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:42,911 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:42,912 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:42,913 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:42,914 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:42,915 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:42,916 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:42,916 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:42,917 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:42,918 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:42,919 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:42,920 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:42,921 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:42,922 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:42,922 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:42,923 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53151|)
+
+[ INFO] 2026-11-08 00:14:42,924 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:42,924 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53151
+[ INFO] 2026-11-08 00:14:42,926 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53152|)
+
+[ INFO] 2026-11-08 00:14:42,928 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:43,482 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:43,483 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53152
+[ INFO] 2026-11-08 00:14:43,483 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:43,483 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:43,484 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:43,486 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:43,487 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:43,501 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:43,501 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:43,503 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:43,504 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:43,505 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:43,505 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:43,506 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:43,506 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:43,507 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:43,508 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:43,508 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:43,510 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:43,510 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:43,512 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:43,512 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:43,514 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53155|)
+
+[ INFO] 2026-11-08 00:14:43,515 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:43,515 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53155
+[ INFO] 2026-11-08 00:14:43,516 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53156|)
+
+[ INFO] 2026-11-08 00:14:43,518 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:44,064 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:44,065 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53156
+[ INFO] 2026-11-08 00:14:44,067 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:44,067 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:44,067 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:44,068 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:44,069 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:44,071 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:44,071 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:44,073 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:44,073 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:44,074 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:44,074 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:44,075 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:44,075 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:44,075 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:44,078 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:44,078 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:44,080 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:44,080 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:44,082 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:44,082 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:44,083 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53159|)
+
+[ INFO] 2026-11-08 00:14:44,084 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:44,084 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53159
+[ INFO] 2026-11-08 00:14:44,085 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53160|)
+
+[ INFO] 2026-11-08 00:14:44,087 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:44,647 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:44,648 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53160
+[ INFO] 2026-11-08 00:14:44,648 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:44,648 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:44,651 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:44,652 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:44,652 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:47,832 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:47,833 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:47,834 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:47,835 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:47,837 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:47,837 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:47,838 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:47,839 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:47,840 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:47,841 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:47,841 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:47,843 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:47,843 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:47,845 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:47,846 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:47,848 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53165|)
+
+[ INFO] 2026-11-08 00:14:47,848 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:47,849 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53165
+[ INFO] 2026-11-08 00:14:47,850 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53166|)
+
+[ INFO] 2026-11-08 00:14:47,853 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:48,360 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:48,361 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53166
+[ INFO] 2026-11-08 00:14:48,361 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:48,361 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:48,362 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:48,364 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:48,364 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:48,367 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:48,368 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:48,369 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:48,370 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:48,371 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:48,371 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:48,372 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:48,373 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:48,373 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:48,374 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:48,375 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:48,376 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:48,377 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:48,379 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:48,379 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:48,381 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53169|)
+
+[ INFO] 2026-11-08 00:14:48,382 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:48,382 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53169
+[ INFO] 2026-11-08 00:14:48,383 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53170|)
+
+[ INFO] 2026-11-08 00:14:48,385 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:48,929 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:48,930 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53170
+[ INFO] 2026-11-08 00:14:48,931 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:48,931 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:48,931 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:48,933 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:48,933 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 00:14:48,936 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 00:14:48,936 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 00:14:48,938 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 00:14:48,939 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 00:14:48,940 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 00:14:48,940 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 00:14:48,941 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 00:14:48,942 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 00:14:48,942 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 00:14:48,944 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 00:14:48,944 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 00:14:48,946 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 00:14:48,946 [anonymous] [127.0.0.1] RECEIVED: CWD Alicia
+[ INFO] 2026-11-08 00:14:48,948 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Alicia
+
+[ INFO] 2026-11-08 00:14:48,949 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 00:14:48,950 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53173|)
+
+[ INFO] 2026-11-08 00:14:48,951 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 00:14:48,951 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53173
+[ INFO] 2026-11-08 00:14:48,953 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||53174|)
+
+[ INFO] 2026-11-08 00:14:48,955 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInversion.class
+[ INFO] 2026-11-08 00:14:49,465 [anonymous] [127.0.0.1] File downloaded /classes/Alicia/ServiceInversion.class
+[ WARN] 2026-11-08 00:14:49,466 [anonymous] [127.0.0.1] Releasing unreserved passive port: 53174
+[ INFO] 2026-11-08 00:14:49,467 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 00:14:49,467 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 00:14:49,470 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 00:14:49,471 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 00:14:49,472 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:09:57,442 [] [] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@85bdee: display name [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]; startup date [Sun Nov 08 12:09:57 CET 2026]; root of context hierarchy
+[ INFO] 2026-11-08 12:09:57,589 [] [] Loading XML bean definitions from file [C:\Users\assia\Documents\GitHub\Plateforme-de-services-dynamiques-BRi\apache-ftpserver-1.1.0\.\res\conf\ftpd-typical.xml]
+[ INFO] 2026-11-08 12:10:00,540 [] [] Bean factory for application context [org.springframework.context.support.FileSystemXmlApplicationContext@85bdee]: org.springframework.beans.factory.support.DefaultListableBeanFactory@1dc9a9f
+[ INFO] 2026-11-08 12:10:00,594 [] [] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dc9a9f: defining beans [org.apache.ftpserver.listener.ListenerFactory#0,org.apache.ftpserver.usermanager.PropertiesUserManagerFactory#0,org.apache.ftpserver.FtpServerFactory#0,myServer]; root of factory hierarchy
+[ INFO] 2026-11-08 12:10:01,251 [] [] FTP server started
+[ INFO] 2026-11-08 12:12:47,480 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:12:47,495 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:12:47,521 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:12:47,526 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:12:47,533 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:12:47,535 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:12:47,547 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:12:47,548 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:12:47,549 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:12:47,552 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:12:47,553 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:12:47,562 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:12:47,562 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-08 12:12:47,564 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-08 12:12:47,565 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:12:47,571 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59139|)
+
+[ INFO] 2026-11-08 12:12:47,571 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:12:47,573 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59139
+[ INFO] 2026-11-08 12:12:47,575 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59140|)
+
+[ INFO] 2026-11-08 12:12:47,579 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-08 12:12:48,105 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-08 12:12:48,116 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59140
+[ INFO] 2026-11-08 12:12:48,117 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:12:48,117 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:12:48,117 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:12:48,119 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:12:48,120 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:12:48,141 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:12:48,141 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:12:48,144 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:12:48,145 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:12:48,146 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:12:48,147 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:12:48,148 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:12:48,148 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:12:48,149 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:12:48,150 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:12:48,150 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:12:48,152 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:12:48,152 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-08 12:12:48,154 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-08 12:12:48,154 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:12:48,157 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59143|)
+
+[ INFO] 2026-11-08 12:12:48,157 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:12:48,158 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59143
+[ INFO] 2026-11-08 12:12:48,160 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59144|)
+
+[ INFO] 2026-11-08 12:12:48,162 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-08 12:12:48,721 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-08 12:12:48,721 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59144
+[ INFO] 2026-11-08 12:12:48,723 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:12:48,723 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:12:48,723 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:12:48,727 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:12:48,727 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:12:48,729 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:12:48,729 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:12:48,732 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:12:48,733 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:12:48,743 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:12:48,743 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:12:48,744 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:12:48,745 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:12:48,745 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:12:48,746 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:12:48,747 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:12:48,748 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:12:48,749 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-08 12:12:48,750 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-08 12:12:48,752 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:12:48,753 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59147|)
+
+[ INFO] 2026-11-08 12:12:48,755 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:12:48,755 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59147
+[ INFO] 2026-11-08 12:12:48,757 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59148|)
+
+[ INFO] 2026-11-08 12:12:48,759 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-08 12:12:49,319 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-08 12:12:49,319 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59148
+[ INFO] 2026-11-08 12:12:49,320 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:12:49,320 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:12:49,323 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:12:49,324 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:12:49,325 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:13:31,902 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:13:31,905 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:13:31,906 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:13:31,908 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:13:31,909 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:13:31,909 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:13:31,910 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:13:31,910 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:13:31,911 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:13:31,913 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:13:31,914 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:13:31,916 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:13:31,916 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-08 12:13:31,918 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-08 12:13:31,919 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:13:31,921 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59152|)
+
+[ INFO] 2026-11-08 12:13:31,921 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:13:31,927 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59152
+[ INFO] 2026-11-08 12:13:31,929 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59153|)
+
+[ INFO] 2026-11-08 12:13:31,931 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-08 12:13:32,490 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-08 12:13:32,491 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59153
+[ INFO] 2026-11-08 12:13:32,492 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:13:32,492 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:13:32,492 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:13:32,493 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:13:32,494 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:13:32,499 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:13:32,499 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:13:32,500 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:13:32,501 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:13:32,503 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:13:32,504 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:13:32,506 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:13:32,506 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:13:32,507 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:13:32,508 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:13:32,508 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:13:32,510 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:13:32,510 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-08 12:13:32,512 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-08 12:13:32,512 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:13:32,514 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59156|)
+
+[ INFO] 2026-11-08 12:13:32,514 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:13:32,516 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59156
+[ INFO] 2026-11-08 12:13:32,517 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59157|)
+
+[ INFO] 2026-11-08 12:13:32,518 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-08 12:13:33,078 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-08 12:13:33,079 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59157
+[ INFO] 2026-11-08 12:13:33,079 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:13:33,080 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:13:33,080 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:13:33,082 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:13:33,082 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:13:33,083 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:13:33,084 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:13:33,086 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:13:33,088 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:13:33,090 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:13:33,091 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:13:33,091 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:13:33,092 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:13:33,092 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:13:33,093 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:13:33,093 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:13:33,095 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:13:33,096 [anonymous] [127.0.0.1] RECEIVED: CWD Assia
+[ INFO] 2026-11-08 12:13:33,097 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Assia
+
+[ INFO] 2026-11-08 12:13:33,098 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:13:33,099 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59160|)
+
+[ INFO] 2026-11-08 12:13:33,100 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:13:33,100 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59160
+[ INFO] 2026-11-08 12:13:33,101 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59161|)
+
+[ INFO] 2026-11-08 12:13:33,103 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceMajuscule.class
+[ INFO] 2026-11-08 12:13:33,661 [anonymous] [127.0.0.1] File downloaded /classes/Assia/ServiceMajuscule.class
+[ WARN] 2026-11-08 12:13:33,662 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59161
+[ INFO] 2026-11-08 12:13:33,662 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:13:33,662 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:13:33,664 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:13:33,666 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:13:33,666 [anonymous] [127.0.0.1] CLOSED
+[ INFO] 2026-11-08 12:23:57,249 [] [127.0.0.1] CREATED
+[ INFO] 2026-11-08 12:23:57,251 [] [127.0.0.1] OPENED
+[ INFO] 2026-11-08 12:23:57,253 [] [127.0.0.1] SENT: 220 Service ready for new user.
+
+[ INFO] 2026-11-08 12:23:57,255 [] [127.0.0.1] RECEIVED: USER anonymous
+[ INFO] 2026-11-08 12:23:57,256 [anonymous] [127.0.0.1] SENT: 331 Guest login okay, send your complete e-mail address as password.
+
+[ INFO] 2026-11-08 12:23:57,256 [anonymous] [127.0.0.1] RECEIVED: PASS *****
+[ INFO] 2026-11-08 12:23:57,256 [anonymous] [127.0.0.1] Anonymous login success - Java25.0.4.1@
+[ INFO] 2026-11-08 12:23:57,257 [anonymous] [127.0.0.1] SENT: 230 User logged in, proceed.
+
+[ INFO] 2026-11-08 12:23:57,257 [anonymous] [127.0.0.1] RECEIVED: TYPE I
+[ INFO] 2026-11-08 12:23:57,259 [anonymous] [127.0.0.1] SENT: 200 Command TYPE okay.
+
+[ INFO] 2026-11-08 12:23:57,259 [anonymous] [127.0.0.1] RECEIVED: CWD classes
+[ INFO] 2026-11-08 12:23:57,260 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes
+
+[ INFO] 2026-11-08 12:23:57,261 [anonymous] [127.0.0.1] RECEIVED: CWD Ines
+[ INFO] 2026-11-08 12:23:57,262 [anonymous] [127.0.0.1] SENT: 250 Directory changed to /classes/Ines
+
+[ INFO] 2026-11-08 12:23:57,263 [anonymous] [127.0.0.1] RECEIVED: EPSV ALL
+[ INFO] 2026-11-08 12:23:57,265 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59231|)
+
+[ INFO] 2026-11-08 12:23:57,266 [anonymous] [127.0.0.1] RECEIVED: EPSV
+[ WARN] 2026-11-08 12:23:57,266 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59231
+[ INFO] 2026-11-08 12:23:57,269 [anonymous] [127.0.0.1] SENT: 229 Entering Passive Mode (|||59232|)
+
+[ INFO] 2026-11-08 12:23:57,271 [anonymous] [127.0.0.1] RECEIVED: RETR ServiceInvalide.class
+[ INFO] 2026-11-08 12:23:57,375 [anonymous] [127.0.0.1] File downloaded /classes/Ines/ServiceInvalide.class
+[ WARN] 2026-11-08 12:23:57,376 [anonymous] [127.0.0.1] Releasing unreserved passive port: 59232
+[ INFO] 2026-11-08 12:23:57,376 [anonymous] [127.0.0.1] SENT: 150 File status okay; about to open data connection.
+
+[ INFO] 2026-11-08 12:23:57,376 [anonymous] [127.0.0.1] SENT: 226 Transfer complete.
+
+[ INFO] 2026-11-08 12:23:57,376 [anonymous] [127.0.0.1] RECEIVED: QUIT
+[ INFO] 2026-11-08 12:23:57,377 [anonymous] [127.0.0.1] SENT: 221 Goodbye.
+
+[ INFO] 2026-11-08 12:23:57,378 [anonymous] [127.0.0.1] CLOSED

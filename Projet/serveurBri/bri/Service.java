@@ -1,4 +1,4 @@
-package serveurBri.bri;
+package bri;
 
 /**
  * La "norme BRi" : toute classe de service doit respecter ce contrat.
